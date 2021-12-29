@@ -24,10 +24,8 @@ public class Conexion {
         Connection conn = null;
         try {
             conn = DriverManager.getConnection(url, user, password);
-            System.out.println("CONNECTED TO DATABASE");
         } catch (SQLException ex) {
             System.out.println(ex.getMessage());
-            System.out.println("ERROR CONNECTING TO DATABASE");
         }
         return conn;
     }
